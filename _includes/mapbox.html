@@ -11,9 +11,10 @@
       zoom: 13
     });
 
-    var popup = new mapboxgl.Popup({ offset: 25 }).setText(
-      "<div class="text-dark">5 Place de l'Église, 22360 Langueux </div>"
-    );
+    var popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+  '<div class="text-dark">5 Place de l\'Église, 22360 Langueux</div>'
+  );
+
 
     var marker = new mapboxgl.Marker()
       .setLngLat([-2.7173850381625893, 48.49558288844466])
